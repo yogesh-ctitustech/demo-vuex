@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import todo from "./modules/todo";
 
 const GET_USERS = "GET_USERS";
 const GET_USER = "GET_USER";
@@ -83,7 +84,7 @@ const actions = {
   },
 };
 
-const modules = {};
+const modules = { todo };
 
 export default createStore({
   state,
